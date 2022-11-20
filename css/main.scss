@@ -1,0 +1,379 @@
+@font-face {
+    font-family: poppins;
+    src: url(../images/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: LockStockApparel;
+    src: url(../images/LockStockApparelFont.otf);
+}
+
+body {
+    margin: 0;
+    font-family: 'LockStockApparel'
+}
+
+.navbar {
+    background-image: url('../images/navbar.svg');
+    margin: 0;
+    padding: 1em;
+
+    .logo {
+        font-family: 'LockStockApparel';
+        text-decoration: none;
+        color: black;
+        font-size: 2.22em;
+        line-height: .75em;
+    }
+    nav {
+        display: none;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .mobile-menu{
+        display: inline-flex;
+        
+    }
+    
+    .secondary-nav {
+        display: inline-flex;
+        padding: 0;
+    }
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+.hero {
+    text-align: center;
+
+    .left-column {
+        .subhead{
+            font-family: 'poppins';
+            font-weight: light;
+            color: black;
+            display: inline-block;
+            width: 360px;
+            height: 50px;
+            margin-top: 0;
+        }
+    
+        h1 {
+            font-family: "LockStockApparel";
+            color: black;
+            font-size: 3em;
+            width: 360px;
+            height: 100px;
+            display: inline-block;
+            margin-bottom: 0;
+        }
+    
+        .primary-cta {
+            background: #f1f1f1;
+            font-family: "LockStockApparel";
+            color: black;
+            text-decoration: none;
+            padding: 15px;
+            font-size: 1.4em;
+            border-radius: 5em;
+            display: inline-block;
+        }
+    
+        .secondary-cta {
+            display: block;
+            margin-top: 1.2em;
+            font-family: 'poppins';
+            color: #707070;
+    
+            img {
+                margin-right: 0.5em;
+                height: 20%;
+            }
+        }
+    }
+}
+
+.slider-frame {
+    overflow: hidden;
+    width: 290px;
+    height: 278px;
+    margin-top: 2em;
+    margin-left: 75px;
+    border-radius: 50px;
+    box-shadow: 12px 12px #f1f1f1;
+  }
+  
+  @keyframes slide_animation {
+    0% {left: 0px}
+    10% {left: 0px}
+    20% {left: 290px}
+    30% {left: 290px}
+    40% {left: 580px}
+    50% {left: 580px}
+    60% {left: 580px}
+    70% {left: 290px}
+    80% {left: 0px}
+    90% {left: 0px}
+    100% {left: 0px}
+  }
+  
+  .slide-images {
+    width: 870px;
+    height: 278px;
+    margin: 0 0 0 -580px;
+    position: relative;
+    animation-name: slide_animation;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+  }
+  
+  .image-container {
+    width: 290px;
+    height: 278px;
+    border-radius: 50px;
+    position: relative;
+    float: left;
+    background: white;
+  }
+
+  .features-section {
+    background-color: #d8bb7e;
+    color: black;
+    font-family: 'poppins';
+    font-weight: lighter;
+  }
+
+  ul.features-list {
+    margin: 0;
+    padding-left: 0.1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    // coming back to display: grid
+    
+    li {
+        font-size: 1.1em;
+        margin-bottom: 1em;
+        margin-left: 2em;
+        position: relative;
+
+        &:before {
+            content: '';
+            left: -2em;
+            top: 3px;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/feather-check-circle.svg');
+            background-size: contain;
+            margin-right: .5em;
+        }
+    }
+
+    
+}
+
+  
+
+
+
+
+
+.testimonials-section {
+    background: #bcc2ff;
+    color: white;
+    font-family: 'poppins';
+    font-weight: bold;
+
+    li {
+        background-color: #b0b7ff;
+        text-align: center;
+        padding: 2em 2em 0em 2em;
+        height: 300px;
+        width: 300px;
+        margin: 0 auto 5em auto;
+        border-radius: 2em;
+    }
+}
+
+  nav.menu-btn{
+    display: block;
+  }
+
+  nav.menu{
+    position: fixed;
+    z-index: 999;
+    width: 140px;
+    right: 0;
+    top: 0;
+    background: #707070;
+    height: 100vh;
+
+    ul{
+        margin-top: 5em;
+
+        li {
+            a{
+                color: white;
+                text-decoration: none;
+                display: block;
+                padding: 1em;
+                font-size: 1.3em;
+                text-align: right;
+
+                &:hover {
+                    color: #000000
+                }
+            }
+
+        }
+
+    
+    }
+  }
+
+  .mobile-menu-exit {
+    float: right;
+    margin: 0.5em;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    float: right;
+    margin: 0.5em;
+    cursor: pointer;
+  }
+
+  .footer {
+    background-image: url('../images/navbar.svg');
+    margin: 0;
+    padding: 0;
+
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        place-content: space-evenly;
+        margin: 0;
+    }
+
+    ul.left-nav {
+        li{
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        
+        }
+    }
+
+    ul.right-nav {
+
+        li{
+            text-decoration: none;
+            color: black;
+        }
+        
+      
+    }
+
+    nav.socials-nav {
+        
+        a{
+            display: inline-block;
+        }
+        
+        
+    }
+  }
+
+  @media only screen and (min-width: 1080px) {
+
+    section {
+        padding: 10em 4em;
+    }
+
+    .hero .container {
+        width: 1080px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+
+        .left-column{
+            margin: -2em 3em 0 5em;
+        }
+    }
+
+    .hero-cta {
+        display: inline-flex;
+    }
+
+    .primary-cta{
+        margin-right: 2em;
+        
+    }
+
+    .secondary-cta {
+        img{
+            height: 100px;
+        }
+    }
+
+    .slider-frame {
+        margin-right: 5em;
+        margin-top: 0.5em;
+    }
+
+    .testimonials-section ul {
+        display: flex;
+
+        li {
+            margin: 0 auto;
+        }
+    }
+
+    
+
+  }
+
+  @media only screen and (min-width: 1500px) {
+
+    .features-section{
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 10%;
+            height: 30em;
+            background-color: #fdb488;
+            left: 0;
+            top: 42.6em;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 340px;
+            height: 10em;
+            background: url('../images/Purple\ circles.svg') no-repeat;
+            left: 4.5em;
+            top: 62em;
+        }
+    }
+    
+  }
