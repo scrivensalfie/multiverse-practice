@@ -1,1 +1,2 @@
 # multiverse-practice
+This is a sample of a real-world project I have been working on, so I thought it'd be a brilliant case study to showcase my coding experience to multiverse. In my spare time I run my own business called Lock Stock Apparel. I wanted to expand outside of the platforms I was already selling on, to grow my brand's presence. So I needed to build a website and to save money as well as gaining lots of experience I've done it entirely by myself. Here I have provided you with the home page.
